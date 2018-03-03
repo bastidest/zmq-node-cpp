@@ -1,0 +1,40 @@
+{
+  "name": "node-cpp-dealer-router-zmq",
+  "version": "1.0.0",
+  "description": "A ZMQ Dealer node client",
+  "main": "app.js",
+  "scripts": {
+    "preinstall": "npm install zeromq@4.6.0 --zmq-external",
+    "dev": "NODE_ENV=development node ./app.js",
+    "prod": "NODE_ENV=production node ./app.js",
+    "build": "webpack-cli --progress --config webpack.prod.config.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.5.13",
+    "zeromq": "^4.6.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.3",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.10",
+    "eslint": "^4.18.2",
+    "eslint-plugin-vue": "^4.3.0",
+    "express": "^4.16.2",
+    "file-loader": "^1.1.10",
+    "node-sass": "^4.7.2",
+    "pug": "^2.0.0-rc.4",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.2",
+    "url-loader": "^0.6.2",
+    "vue-loader": "^14.1.1",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-middleware": "^3.0.0",
+    "webpack-merge": "^4.1.2"
+  }
+}
